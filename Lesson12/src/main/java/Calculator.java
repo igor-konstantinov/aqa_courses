@@ -6,13 +6,11 @@ public class Calculator {
 
     public static int multiply(int firstNumber, int secondNumber) {return  firstNumber * secondNumber; }
 
-    public static double division(int firstNumber, int secondNumber) {
+    public static double divide(int firstNumber, int secondNumber) {
         try{
             return firstNumber / secondNumber;
         } catch (ArithmeticException e){
-            System.out.println("ArithmeticException: " + e);
-        } finally {
-            return firstNumber / secondNumber;
+            return 0.0;
         }
     }
 }

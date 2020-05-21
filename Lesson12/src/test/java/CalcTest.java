@@ -19,11 +19,11 @@ public class CalcTest {
 
     @Test
     public void testDivision(){
-        Assert.assertEquals(Calculator.division(10, 5), 2);
+        Assert.assertEquals(Calculator.divide(10, 5), 2);
     }
 
-    //@Test(expectedExceptions = ArithmeticException.class)
+    @Test
     public void testException(){
-        Calculator.division(10, 0);
+        Calculator.divide(10, 0);
     }
 }
